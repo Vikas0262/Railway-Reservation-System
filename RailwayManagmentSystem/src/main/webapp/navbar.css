@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fas fa-home{
+	font-size:2rem;
+}
+.notification{
+	display:flex;
+}
+.alert{
+	 height: 500px;
+    width: 800px;
+    position: absolute;
+    top: 145%;
+    z-index: 100;
+    background-color: white;
+	
+}
+.alert2{
+    height: 500px;
+    width: 800px;
+    position: absolute;
+    top: 260%;
+    z-index: 100;
+    /* margin: 0 auto; */
+    /* display: block; */
+    /* width: 100%; */
+    background-color: white;
+}
+.head{
+    background-color: rgb(248,249,250);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    position: relative;
+    max-width: 80px;
+}
+.head ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head li{
+    list-style: none;
+}
+
+.head li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 15px;
+    font-family: 'Titillium Web', sans-serif;     
+    color: black;
+    transition: 0.5s;
+}
+
+.head li a:hover{
+    color: red;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+
+    display: none;
+}
+@media(max-width:700px){
+    .container{
+        display:block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left:0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        transition: 0.5s;
+        z-index: 1;
+    }
+    .container .open{
+        background: none;
+        border: 0;
+        outline: none;
+        font-size: 40px;
+        cursor: pointer;
+    }
+    
+    
+    .close{
+        background: none;
+        border: 0;
+        outline: none;
+        font-size: 40px;
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        cursor: pointer;
+        color: white;
+    }
+    
+    .content a{
+        text-decoration: none;
+        color: #818181;
+        display: block;
+        font-size: 35px;
+    }
+    
+    .content a:hover,.content a:focus{
+        color: #f1f1f1;
+    }
+}
+
+
+
